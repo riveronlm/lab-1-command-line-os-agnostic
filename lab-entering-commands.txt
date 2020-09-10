@@ -16,8 +16,11 @@ $ ls<ENTER>
 
 Copy and paste the output of ls below.
 ----------
-
-
+Luiss-MacBook-Air:~ luisriveron$ ls
+Applications    Downloads       Music           folder1
+Desktop         Library         Pictures        folder2
+Documents       Movies          Public
+Luiss-MacBook-Air:~ luisriveron$ 
 
 ==========
 2a. Type: 
@@ -26,21 +29,26 @@ $ ls D<TAB>
 
 What happens?  Describe it below.
 ----------
-
-
+Luiss-MacBook-Air:~ luisriveron$ ls D
+Desktop/   Documents/ Downloads/ 
+Luiss-MacBook-Air:~ luisriveron$ ls D
 
 ==========
 2b. Press <TAB> one more time.  Copy and paste the output below.
 ----------
-
-
+Luiss-MacBook-Air:~ luisriveron$ ls D
+Desktop/   Documents/ Downloads/ 
+Luiss-MacBook-Air:~ luisriveron$ ls D
+Desktop/   Documents/ Downloads/ 
+Luiss-MacBook-Air:~ luisriveron$ ls D
 
 ==========
 2c. Now press <ENTER>. Copy and paste the output below.
 ----------
 
-
-
+Luiss-MacBook-Air:~ luisriveron$ ls D
+ls: D: No such file or directory
+Luiss-MacBook-Air:~ luisriveron$ 
 ==========
 3.  Type:
 
@@ -48,8 +56,8 @@ $ ls -l Documents<ENTER>
 
 Copy and paste the first *two lines* of output below.
 ----------
-
-
+-rw-r-----@   1 luisriveron  staff    39948 Sep 16  2015 unisex-trust-no-bitch-regina-george-tank-top.jpg
+-rw-r-----@   1 luisriveron  staff   255319 Sep 17  2015 washhtssnapback.jpg
 
 ==========
 4.  Type:
@@ -58,8 +66,8 @@ $ ls -a Documents
 
 Copy and paste the first *two lines* of output below.
 ----------
-
-
+unisex-trust-no-bitch-regina-george-tank-top.jpg
+washhtssnapback.jpg
 
 ==========
 5.  Type:
@@ -69,7 +77,7 @@ Copy and paste the first *two lines* of output below.
 What command was repeated?
 ----------
 
-
+ls -a Documents
 
 ==========
 6.  Type:
@@ -79,7 +87,7 @@ What command was repeated?
 What command was repeated?
 ----------
 
-
+Same as before
 
 ==========
 7.  Type:
@@ -88,8 +96,16 @@ $ ls /b<TAB><ENTER>
 
 What is the result of pressing tab?
 ----------
-
-
+Luiss-MacBook-Air:~ luisriveron$ ls /bin/
+[               dd              launchctl       pwd             test
+bash            df              link            rm              unlink
+cat             echo            ln              rmdir           wait4path
+chmod           ed              ls              sh              zsh
+cp              expr            mkdir           sleep
+csh             hostname        mv              stty
+dash            kill            pax             sync
+date            ksh             ps              tcsh
+Luiss-MacBook-Air:~ luisriveron$ 
 
 ==========
 8.  Type:
@@ -98,38 +114,39 @@ $ ls doesnotexist
 
 Copy and paste the output below.
 ----------
-
-
+Luiss-MacBook-Air:~ luisriveron$ ls doesnotexist
+ls: doesnotexist: No such file or directory
+Luiss-MacBook-Air:~ luisriveron$ 
 
 ==========
 9.  What key do I press to go to the previous command?
 ----------
 
-
+up arrow key
 
 ==========
 10.  Name two flags that we used in this exercise.
 ----------
 
-
+-a and -l
 
 ==========
 11.  What key do I use to attempt to autocomplete a command or a file name?
 ----------
 
-
+<Tab>
 
 ==========
 12.  What was the main command that we used throughout this exercise?
 ----------
-
+ls
 
 
 ==========
 13.  Name one argument that we passed to the command.
 ----------
 
-
+ls doesnotexist
 
 ==========
 14.  Type:
@@ -139,8 +156,9 @@ $ foo<ENTER>
 Copy and paste the output below.
 ----------
 
-
-
+Luiss-MacBook-Air:~ luisriveron$ foo
+bash: foo: command not found
+Luiss-MacBook-Air:~ luisriveron$ 
 ==========
 15.  Type:
 
@@ -148,8 +166,9 @@ Copy and paste the output below.
 
 Copy and paste the output below.
 ----------
-
-
+Luiss-MacBook-Air:~ luisriveron$ foo
+bash: foo: command not found
+Luiss-MacBook-Air:~ luisriveron$ 
 
 ==========
 16.  In the following line....
@@ -158,3 +177,4 @@ $ ls -a Desktop
 
 What is the command, flag, argument, and prompt?
 ----------
+command is ls, flag is -a, prompt is Desktop
