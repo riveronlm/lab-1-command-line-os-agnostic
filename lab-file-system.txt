@@ -30,8 +30,8 @@ If it doesn't start at #1 again, or ask for help before moving on!
 
 Copy and paste the output of pwd below.
 ----------
-
-
+Luiss-MacBook-Air:mtec1003 luisriveron$ pwd
+/Users/luisriveron/mtec1003
 
 ==========
 5. Type:
@@ -41,8 +41,8 @@ $ ls
 
 Copy and paste the output below.
 ----------
-
-
+Luiss-MacBook-Air:mtec1003 luisriveron$ ls
+animals
 
 ==========
 6. Type:
@@ -52,8 +52,8 @@ $ ls
 
 Copy and paste the output below.
 ----------
-
-
+Luiss-MacBook-Air:mtec1003 luisriveron$ ls
+animals food
 
 ==========
 7. Type:
@@ -63,8 +63,9 @@ $ ls
 
 Copy and paste the output below.
 ----------
-
-
+Luiss-MacBook-Air:mtec1003 luisriveron$ mkdir -p foo/bar/baz/qux
+Luiss-MacBook-Air:mtec1003 luisriveron$ ls
+animals foo     food
 
 ==========
 8. Type:
@@ -74,8 +75,9 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
-
+Luiss-MacBook-Air:qux luisriveron$ pwd
+/Users/luisriveron/mtec1003/foo/bar/baz/qux
+Luiss-MacBook-Air:qux luisriveron$ 
 
 ==========
 9. Type:
@@ -85,8 +87,9 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
-
+Luiss-MacBook-Air:qux luisriveron$ cd ../..
+Luiss-MacBook-Air:bar luisriveron$ pwd
+/Users/luisriveron/mtec1003/foo/bar
 
 ==========
 10. Type:
@@ -96,8 +99,11 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
-
+Luiss-MacBook-Air:bar luisriveron$ cd -
+/Users/luisriveron/mtec1003/foo/bar/baz/qux
+Luiss-MacBook-Air:qux luisriveron$ pwd
+/Users/luisriveron/mtec1003/foo/bar/baz/qux
+Luiss-MacBook-Air:qux luisriveron$ 
  
 ==========
 11. Type:
@@ -107,8 +113,8 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
-
+Luiss-MacBook-Air:mtec1003 luisriveron$ pwd
+/Users/luisriveron/mtec1003
 
 ==========
 12. Type:
@@ -119,8 +125,8 @@ $ ls -l
 
 Copy and paste the first two lines from the output into the space below.
 ----------
-
-
+drwxr-xr-x  3 luisriveron  staff  96 Sep 16 19:57 foo
+drwxr-xr-x  2 luisriveron  staff  64 Sep 16 19:56 food
 
 ==========
 13. Type:
@@ -131,7 +137,8 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
-
+/Users/luisriveron
+Luiss-MacBook-Air:~ luisriveron$ 
 
 ==========
 14. Type:
@@ -142,7 +149,8 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
-
+Luiss-MacBook-Air:volumes luisriveron$ pwd
+/volumes
 
 ==========
 15. Type:
@@ -153,8 +161,10 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
-
-
+Luiss-MacBook-Air:volumes luisriveron$ cd /unknown_folder
+bash: cd: /unknown_folder: No such file or directory
+Luiss-MacBook-Air:volumes luisriveron$ pwd
+/volumes
 ==========
 15. Type:
 
@@ -163,13 +173,14 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
-
+Luiss-MacBook-Air:mtec1003 luisriveron$ pwd
+/Users/luisriveron/mtec1003
 
 
 ==========
 16a. Make sure you're back in your mtec1002, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
 ----------
-
+pwd
 
 
 ==========
@@ -193,23 +204,21 @@ lemon
 Use only one command to make all of these new directories.  Write what command you used below:
 ----------
 
-
-
+ mkdir -p lemon/strawbery/orange/pineapple
 ==========
 18. Make another directory called aardvark.  
 
 Write the command you used to create the directory below:
 ----------
 
-
+mkdir
 
 ==========
 19. List the files and directories in the current directory using the long format.  
 
 What is the modified date of the aardvark directory?
 ----------
-
-
+drwxr-xr-x   2 luisriveron  staff   64 Sep 17 12:38 aardvark
 
 ==========
 20. Make 3 directories nested within each other:
@@ -221,7 +230,7 @@ What is the modified date of the aardvark directory?
 What command did you use?
 ----------
 
-
+mkdir -p foo/bar/baz
 
 ==========
 21. Change your directory so that you're in the inner most directory (baz)
@@ -229,7 +238,7 @@ What command did you use?
 What command did you use?
 ----------
 
-
+cd baz
 
 ==========
 22. Change your directory so that you're two directories up (foo)
@@ -237,43 +246,44 @@ What command did you use?
 What command did you use?
 ----------
 
-
+cd ../..
 ==========
 23. What command is used to delete empty directories?
 ----------
 
-
+rmdir
 
 ==========
 24. What command is used to print out your current working directory?
 ----------
 
-
+ls
 
 ==========
 25. What flag do I pass to ls to print out all files?
 ----------
 
-
+-l
 
 ==========
 26. What's the shortcut for home directory?
 ----------
 
-
+cd ~
 
 ==========
 27. What's a pathname?
 ----------
 
-
+/users/luisriveron
 
 ==========
 28. What's a directory?
 ----------
-
+ a folder 
 
 
 ==========
 29. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?
 ----------
+/Users/luisriveron/Downloads
